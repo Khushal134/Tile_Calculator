@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:tile_calculator/home_page.dart';
+import 'package:tile_calculator/secret.dart';
 import 'package:tile_calculator/signIn.dart';
 
 void main() async {
@@ -9,10 +10,10 @@ void main() async {
   try {
     await Firebase.initializeApp(
       options: FirebaseOptions(
-        apiKey: "AIzaSyCLEOWGa-f_OeynASMGKKVfltVnl6gybuE",
-        appId: "1:591285431918:web:c77a68cb322a1209a0807f",
-        messagingSenderId: "591285431918",
-        projectId: "project1-c90f1",
+        apiKey: apiKey,
+        appId: appId,
+        messagingSenderId: messagingSenderId,
+        projectId: projectId,
       ),
     );
   } catch (e) {
